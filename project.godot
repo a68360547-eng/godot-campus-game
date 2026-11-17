@@ -1,0 +1,26 @@
+config_version=5
+
+[application]
+config/name="最終死線"
+run/main_scene="res://scenes/home.tscn"
+
+[autoload]
+GameSession="*res://scripts/game_session.gd"
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="canvas_items"
+
+[input]
+ui_accept={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":13), Object(InputEventKey,"physical_keycode":32)]
+}
+
+[gui]
+theme/custom="res://assets/theme.tres"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
